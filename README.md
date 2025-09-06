@@ -5,6 +5,7 @@ KMS 激活服务，slmgr 命令激活 Windows 系统、Office
 1. 设置服务 `slmgr -skms skms.netnr.eu.org`
 2. 安装密钥 `slmgr -ipk 版本对应秘钥`
 3. 激活系统 `slmgr -ato`
+4. 激活系统后，可以清除服务 slmgr /ckms  （/ckms = Clear KMS server name，从系统里删除你之前设置的 ksm.xxx.com。 执行后，系统会恢复成默认的自动发现（即没有指定固定 KMS 服务器））
 
 ### 可用服务
 - `skms.netnr.eu.org` 维护 **CNAME** 指向有效的服务
